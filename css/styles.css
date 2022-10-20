@@ -1,0 +1,226 @@
+/* цвет основного текста #212121*/
+/*вторичный цвет текста #757575*/
+/* белый #FFFFFF*/
+/* черный #000000*/
+/* акцент #2196F3*/
+/* вторичный цвет фона#2196F3 */
+
+:root{
+    --primary-text-color: #757575;
+    --title-text-color:  #212121;
+    --accent-color: #2196F3;
+    --primary-white-color: #ffffff; 
+    --new-accept: #000000;
+    --color-button-primary:#188CE8;
+    --color-bg: #2F303A;
+    --color-bg-filter: #F5F4FA;
+    --accept-footer:rgba(255, 255, 255, 0.6);
+
+
+}
+
+body{
+    color: var(--primary-text-color);
+    background-color: var(--primary-white-color);
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+}
+
+/* Стилизация логотипа */
+
+.logo-link{
+    color: var(--accent-color);
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    text-decoration: none;
+}
+
+.logo-link .logo-header{
+    color: var(--new-accept);
+    text-decoration: none;
+}
+
+/* Навігація */
+/* site nav */
+
+.site-nav .link {
+    color: var(--title-text-color);
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+}
+.site-nav .link:hover, 
+.site-nav .link:focus {
+    color: var(--accent-color);
+}
+
+.site-nav .link.current{
+    color: var(--accent-color);
+}
+
+/* contact-list */
+
+.contact.link{
+    color: var(--primary-text-color);
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    font-style: normal;
+}
+
+.contact.link:hover{
+    color: var(--accent-color);
+}
+
+
+/* Пропозиції */
+
+.propositions{
+    background-color: var(--color-bg);
+    text-align: center;
+    letter-spacing: 0.06em;
+}
+.propositions-title{
+    color: var(--primary-white-color);
+    font-weight: 900;
+    font-size: inherit;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.button.primary{
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    align-items: center;
+    cursor: pointer;
+    font-family: inherit;
+}
+.button.primary:hover,
+.button.primary:focus{
+    color: var(--color-button-primary); 
+}
+
+/* Особенности */
+
+.features-title{
+    color: var(--title-text-color);
+    font-weight: 700;
+    line-height: 1.14;
+    font-size: inherit;
+    text-transform: uppercase;
+}
+ul{
+    list-style: none;
+}
+
+.section-text{
+    line-height: 1.7;
+
+}
+
+/* Чим ми займаємося+Члени команди */
+.section-title{
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+
+}
+/* Члени команди */
+
+.member-team{
+    color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+
+}
+
+.job-title{
+    font-size: 16px;
+    line-height: 1.19;
+}
+
+/* Footer */
+
+.footer{
+    background-color: var(--color-bg);
+}
+
+
+.logo-footer{
+    color: var(--primary-white-color);
+    text-decoration: none;
+}
+
+
+.contacts{
+    line-height: 1.7;
+    font-style: normal;
+}
+.address{
+    color: var(--primary-white-color);
+    text-decoration: none;
+    cursor: none;
+
+}
+.mail,
+.tel{
+    color: var(--accept-footer);
+    text-decoration: none;
+    cursor: none;
+}
+
+/* Стилі для Портфоліо */
+
+/* Наші проекти */
+/* Button */
+
+.filter{
+    color: var(--title-text-color);
+    background-color: var(--color-bg-filter);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center; 
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.filter:hover,
+.filter:focus{
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+}
+
+/* Наші проекти */
+
+ul{
+    list-style: none;
+}
+
+.title{
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2.0;
+    letter-spacing: 0.06em;
+}
+
+.text{
+    font-size: 16px;
+    line-height: 1.88; 
+}
+
