@@ -27,6 +27,49 @@ body{
     letter-spacing: 0.03em;
 }
 
+.list{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+    bottom: 0;
+}
+.container{
+    margin-left: auto;
+    margin-right: auto;
+
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 1200px;
+}
+
+.page.header {
+    background-color: #188CE8;
+}
+
+/* Main nav */
+.main-nav{
+    display: flex;
+    align-items: center;
+    border-top: 0;
+    border-bottom: 1px solid #ECECEC;
+}
+
+/* Site nav */
+
+.site-nav{
+    display: flex;
+    margin-left: 93px;
+}
+
+.site-nav .item + .item{
+    margin-left: 50px;
+}
+
 /* Стилизация логотипа */
 
 .logo-link{
@@ -64,6 +107,15 @@ body{
 
 /* contact-list */
 
+.contacts-list{
+    display: flex;
+    margin-left: auto;
+}
+
+.contacts-list .item + .item{
+    margin-left: 50px;
+ }
+
 .contact.link{
     color: var(--primary-text-color);
     font-weight: 500;
@@ -77,15 +129,19 @@ body{
     color: var(--accent-color);
 }
 
-
 /* Пропозиції */
 
 .propositions{
+    padding-top: 200px;
+    padding-bottom: 200px;
     background-color: var(--color-bg);
     text-align: center;
     letter-spacing: 0.06em;
 }
+
 .propositions-title{
+    padding-bottom: 30px;
+
     color: var(--primary-white-color);
     font-weight: 900;
     font-size: inherit;
@@ -96,6 +152,11 @@ body{
 }
 
 .button.primary{
+    display: inline-block;
+    padding: 10px 32px;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    min-width: 200px;
     color: var(--primary-white-color);
     background-color: var(--accent-color);
     font-weight: 700;
@@ -106,49 +167,126 @@ body{
     cursor: pointer;
     font-family: inherit;
 }
+
 .button.primary:hover,
 .button.primary:focus{
     color: var(--color-button-primary); 
 }
 
 /* Особенности */
+.section{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 
+.section.works{
+    padding-top: 0;
+    padding-bottom: 94px;
+}
+
+.section-title.nameless{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.features-list{
+    display: flex;
+}
+
+.features-list .item{
+    width: 270px;
+    margin-left: 0;
+}
+
+.features-list .item + .item{
+    margin-left: 30px;
+}
 .features-title{
+    margin-top: 0px;
+    margin-bottom: 10px;
+
     color: var(--title-text-color);
     font-weight: 700;
     line-height: 1.14;
     font-size: inherit;
     text-transform: uppercase;
 }
+
+.features-list{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
 ul{
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .section-text{
+    margin: 0;
+    padding-top: 0;
+    padding-bottom: 0;
     line-height: 1.7;
-
 }
 
 /* Чим ми займаємося+Члени команди */
+
+.works-list{
+    display: flex;
+}
+
 .section-title{
+    margin-top: 0;
+    margin-bottom: 50px;
+
     color: var(--title-text-color);
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
-
 }
+
+.works-list .list{
+    width: 370px;
+    margin-left: 0;
+}
+
+.works-list .list + .list{
+    margin-left: 30px;
+}
+
 /* Члени команди */
 
-.member-team{
+.team-list{
+    display: flex;
+}
+
+.team-list .list{
+    width: 270px;
+    margin-left: 0;
+}
+
+.team-list .list + .list{
+    margin-left: 30px;
+}
+
+.team-title{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+
     color: var(--title-text-color);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
-
 }
 
 .job-title{
+    margin-bottom: 30px;
+    text-align: center;
     font-size: 16px;
     line-height: 1.19;
 }
@@ -156,26 +294,29 @@ ul{
 /* Footer */
 
 .footer{
+    padding-top: 60px;
+    padding-bottom: 60px;
     background-color: var(--color-bg);
 }
 
-
 .logo-footer{
+    padding-bottom: 20px;
     color: var(--primary-white-color);
     text-decoration: none;
 }
-
 
 .contacts{
     line-height: 1.7;
     font-style: normal;
 }
+
 .address{
+    padding-bottom: 9px;
     color: var(--primary-white-color);
     text-decoration: none;
     cursor: none;
-
 }
+
 .mail,
 .tel{
     color: var(--accept-footer);
@@ -183,12 +324,36 @@ ul{
     cursor: none;
 }
 
+.mail{
+    padding-bottom: 9px;
+}
+
 /* Стилі для Портфоліо */
 
-/* Наші проекти */
+.visually-hidden{
+    display: none;
+}
 /* Button */
 
+.filter-list{
+    display: flex;
+    margin-bottom: 34px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.filter-list .item{
+    margin-left: 0;
+}
+
+.filter-list .item + .item{
+    margin-left: 8px;
+}
+
 .filter{
+    padding: 6px 22px;
+    border-radius: 4px;
     color: var(--title-text-color);
     background-color: var(--color-bg-filter);
     font-weight: 500;
@@ -211,7 +376,34 @@ ul{
     list-style: none;
 }
 
-.title{
+.projects-list{
+    display: flex;
+    flex-wrap: wrap;  
+}
+
+
+.projects-list .item{
+    margin-left: 30px;
+}
+
+.projects-list .item:nth-child(3n + 1){
+    margin-left: 0;
+}
+
+.projects-list .item:nth-child(-n + 6){
+    margin-bottom: 30px;
+}
+
+.projects-list .item .content{
+    width: 370px;
+    background: var(--primary-white-color);
+    border-top: 0;
+    border: 1px solid #EEEEEE;
+    padding: 20px 24px;
+}
+
+.projects-list .title{
+    margin-bottom: 4px;
     color: var(--title-text-color);
     font-weight: 700;
     font-size: 18px;
@@ -219,7 +411,8 @@ ul{
     letter-spacing: 0.06em;
 }
 
-.text{
+.projects-list .text{
+    margin: 0;
     font-size: 16px;
     line-height: 1.88; 
 }
