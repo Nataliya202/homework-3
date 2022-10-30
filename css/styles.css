@@ -34,10 +34,12 @@ body{
     text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, h6{
-    margin: 0;
-    bottom: 0;
+h1, h2, h3, h4, h5, h6,
+p{
+    margin-top: 0;
+    margin-bottom: 0;
 }
+
 .container{
     margin-left: auto;
     margin-right: auto;
@@ -47,8 +49,8 @@ h1, h2, h3, h4, h5, h6{
     width: 1200px;
 }
 
-.page.header {
-    background-color: #188CE8;
+.page-header {
+    border-bottom: 1px solid #ECECEC;
 }
 
 /* Main nav */
@@ -56,7 +58,7 @@ h1, h2, h3, h4, h5, h6{
     display: flex;
     align-items: center;
     border-top: 0;
-    border-bottom: 1px solid #ECECEC;
+    
 }
 
 /* Site nav */
@@ -64,6 +66,12 @@ h1, h2, h3, h4, h5, h6{
 .site-nav{
     display: flex;
     margin-left: 93px;
+}
+
+.site-nav .item{
+    padding-top: 32px;
+    padding-bottom: 32px;
+
 }
 
 .site-nav .item + .item{
@@ -90,6 +98,7 @@ h1, h2, h3, h4, h5, h6{
 /* site nav */
 
 .site-nav .link {
+    
     color: var(--title-text-color);
     font-weight: 500;
     line-height: 1.14;
@@ -112,11 +121,18 @@ h1, h2, h3, h4, h5, h6{
     margin-left: auto;
 }
 
+.contacts-list .item{
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
 .contacts-list .item + .item{
     margin-left: 50px;
  }
 
 .contact.link{
+    padding-top: 32px;
+    padding-bottom: 32px;
     color: var(--primary-text-color);
     font-weight: 500;
     line-height: 1.14;
@@ -135,12 +151,14 @@ h1, h2, h3, h4, h5, h6{
     padding-top: 200px;
     padding-bottom: 200px;
     background-color: var(--color-bg);
-    text-align: center;
-    letter-spacing: 0.06em;
+    text-align: center;  
 }
 
 .propositions-title{
-    padding-bottom: 30px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 696px;
 
     color: var(--primary-white-color);
     font-weight: 900;
@@ -253,8 +271,17 @@ ul{
     margin-left: 30px;
 }
 
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 /* Члени команди */
 
+.section.bg{
+    background-color: var(--color-bg-filter);
+}
 .team-list{
     display: flex;
 }
@@ -262,14 +289,19 @@ ul{
 .team-list .list{
     width: 270px;
     margin-left: 0;
+    background-color: var(--primary-white-color);
 }
 
 .team-list .list + .list{
     margin-left: 30px;
 }
 
+.team-list .list .content{
+    
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
 .team-title{
-    margin-top: 30px;
     margin-bottom: 10px;
     text-align: center;
 
@@ -280,7 +312,6 @@ ul{
 }
 
 .job-title{
-    margin-bottom: 30px;
     text-align: center;
     font-size: 16px;
     line-height: 1.19;
@@ -306,7 +337,8 @@ ul{
 }
 
 .address{
-    padding-bottom: 9px;
+    margin-top: 20px;
+    margin-bottom: 9px;
     color: var(--primary-white-color);
     text-decoration: none;
     cursor: none;
@@ -320,7 +352,7 @@ ul{
 }
 
 .mail{
-    padding-bottom: 9px;
+    margin-bottom: 9px;
 }
 
 /* Стилі для Портфоліо */
@@ -332,10 +364,9 @@ ul{
 
 .filter-list{
     display: flex;
-    margin-bottom: 34px;
+    margin-bottom: 50px;
     align-items: center;
     justify-content: center;
-
 }
 
 .filter-list .item{
@@ -349,6 +380,7 @@ ul{
 .filter{
     padding: 6px 22px;
     border-radius: 4px;
+    border: navajowhite;
     color: var(--title-text-color);
     background-color: var(--color-bg-filter);
     font-weight: 500;
@@ -392,7 +424,7 @@ ul{
 .projects-list .item .content{
     width: 370px;
     background: var(--primary-white-color);
-    border-top: 0;
+    border-top: none;
     border: 1px solid #EEEEEE;
     padding: 20px 24px;
 }
