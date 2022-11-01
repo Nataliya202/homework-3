@@ -330,13 +330,16 @@ img{
     text-decoration: none;
 }
 
+.footer .logo-link{
+    margin-bottom: 20px;
+}
+
 .contacts{
     line-height: 1.7;
     font-style: normal;
 }
 
 .address{
-    margin-top: 20px;
     margin-bottom: 9px;
     color: var(--primary-white-color);
     text-decoration: none;
